@@ -5,7 +5,6 @@ if(!isset($_SESSION['Name']))
   header("location:Alogin.php");
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +20,6 @@ body
   background-attachment: fixed;
   height:auto;
 }
-
 h1
 {
    color:white;
@@ -32,9 +30,7 @@ nav
 { 
 	width:100%;
     height:80px;
-    
     line-height: 50px;
-   
 }
 nav ul
 {
@@ -45,8 +41,7 @@ nav ul li
 {
     list-style-type: none;
     display:inline-block;
-    transition: 0.2s all;
-                
+    transition: 0.2s all;                
 }
 nav ul li a
 {
@@ -60,7 +55,6 @@ nav ul li:hover
 {
     background-color: green;
 }
-
             #b1{
               padding-left: 20px;
               color: black;
@@ -84,7 +78,6 @@ nav ul li:hover
 
               }
 
-
               #m1
               {
                 text-align: center;
@@ -92,7 +85,6 @@ nav ul li:hover
                 font-family: verdana;
                 font-size: 30px;
               }
-
 
               #n1{
                 color: white;
@@ -106,10 +98,6 @@ nav ul li:hover
                 font-family: verdana; 
               }
 
-
-
-
-
               #s1
               {
                     margin-left: 27%;
@@ -120,7 +108,6 @@ nav ul li:hover
                     font-family: verdana;
                     text-decoration: none;
  
-
               }
 
               #s2
@@ -164,7 +151,6 @@ nav ul li:hover
                 padding: 10px;
                 background:rgba(0,0,0,0.3)
               }
-
               
 </style>
 </head>
@@ -172,7 +158,6 @@ nav ul li:hover
 <div id="main">
     <nav>  
     	<ul>
-         
             <li><a href="#">Dashboard</a></li>
             <li><a href=logout.php>Logout</a></li>
             </ul>
@@ -184,7 +169,6 @@ nav ul li:hover
 -->
     <h2 id="d1"><b><?php  echo $_SESSION['Name'];  ?></b></h2>
 <div id = "boxes"> 
-          
 <fieldset id="c1">
 <a href="studentdetails.php">
 <h3 id="s1">Student</h3>
@@ -200,8 +184,5 @@ nav ul li:hover
 <h3 id="s3">Delete Student</h3>
 </a>
 </fieldset>
-             
-
-
 </body>
 </html>
